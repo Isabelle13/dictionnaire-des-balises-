@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="img.html">
+</head>
+<body>
+    <p><b>&lt;img&gt;</b></p>
+    <p>Permet de mettre une image dans le document html </p>
+    <p><b>Attributs</b></p> 
+    <br><p><b>crossorigin</b> <br>
+        <br>Cet attribut à valeur contrainte indique si la récupération de l'image peut être effectuée via d'autres origines (CORS). Les images pour lesquelles le CORS a été activé peuvent être réutilisées dans un élément &lt;img&gt;  sans le corrompre.<br> 
+        Les  valeurs autorisées pour cet attribut sont : <br>
+        <br> <b>Anonymus</b> <br>
+        <br>Une requête entre deux origines est effectuée (avec l'en-tête Origin) mais aucune information d'authentification n'est transmise (aucun cookie, aucun certificat X.5090, aucune authentification simple par HTTP). Si le serveur ne fournit pas  d'informations d'authentification pour le site d'origine (en n'utilisant pas l'en-tête HTTP Access-Control-Allow-Origin), l'image sera corrompue et son utilisation sera restreinte.</Br></p>
+        <br><b>use-credentials</b> <br>
+        <br>Une requête entre deux origines est effectuée (avec l'en-tête Origin) avec des informations d'authentification qui sont envoyées (par exemple un cookie, un certificat et une authentification HTTP). Si le serveur ne fournit pas d'informations d'authentification au site d'origine (via l'en-tête HTTP Access-Control-Allow-Origin), l'image sera corrompue et son utilisation sera restreinte. <br>
+        <br><b>decoding</b> <br>
+       <br> Cet attribut fournit une indication à l'agent utilisateur pour le décodage de l'information. Les valeurs possibles sont : <br>
+       <br><b>sync</b>
+       <BR></BR> L'image est décodée de façon synchrone afin d'être présentée de façon atomique avec le reste du contenu. <br>
+        <br> <b>async</b> <br>
+        <br>L'image est décodée de façon asynchrone afin de réduire le temps nécessaire à la présentation du reste du contenu <br>
+        <br><b>auto</b> <br>
+        <br> Le mode par défaut qui indique l'absence de préférence pour le mode de décodage. Dans ce cas, l'agent utilisateur décide de la meilleure stratégie. <br>
+        <br> <b>height</b> <br>
+        <br>La hauteur intrinsèque de l'image exprimée en pixels <br>
+        <br><b>sizes</b> <br>
+        <br>Une liste de une ou plusieurs chaînes de caractères séparées par des virgules qui indique chacune une condition de taille. Chaque condition de taille (source size) se compose :
+        <ul>
+            <li>D'une condition sur le média (qui doit être absente pour le dernier élément de la liste).</li>
+            <li> Une valeur</li>
+        </ul>
+        <p>Les valeurs des conditions de taille définissent la taille voulue pour l'affichage de l'image. Les agents utilisateurs utilisent la taille courante afin de choisir une des images sources parmi l'attribut "srcset" lorsque ces sources sont décrites avec un descripteur de largeur <u>('w')</u>. La condition de taille choisie a un impact sur la taille intrinsèque de l'image (c'est-à-dire la taille de l'image affichée si aucune mise en forme CSS n'est appliquée). Si l'attribut "srcset" est absent ou ne contient aucune valeur qui soit un descripteur de largeur, l'attribut "sizes" n'aura aucun effet.</p> 
+        <br><p><b>src</b></p> 
+        <br>Une liste de une ou plusieurs chaînes de caractères, séparées par des virgules, qui indiquent un ensemble d'images sources parmi lequel l'agent utilisateur pourra choisir la meilleure image à afficher. Chaque chaîne de caractères se compose :
+        <ol>
+            <li>D'une URL vers une image
+               <li> Éventuellement d'un espace suivi :
+                D'un descripteur de largeur ou un entier positif directement suivi par 'w'. Le descripteur de largeur est divisé par la taille de la condition de taille définie dans l'attribut "sizes" afin de calculer la densité de pixel réelle.
+            </li>
+        </ol>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+H1{
+    color:blue
+}
+
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    }
+   #menu li {
+    float:left;
+    margin:auto;
+    padding:0;
+    background-color:rgb(186, 186, 214);
+    }
+   #menu li a {
+    display:block;
+    width:150px;
+    color:#3108eb;
+    text-decoration:none;
+    padding:5px;
+    }
+   #menu li a:hover {
+    color:rgb(250, 250, 250);
+    }
+    #menu ul li ul {
+        display:none;
+        }
+        #menu ul li:hover ul {
+            display:block;
+            }
+           #menu li:hover ul li {
+            float:none;
+            }
+            #menu li ul {
+                position:absolute;
+                }
+
+      
